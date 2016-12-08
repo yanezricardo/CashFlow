@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error.failed.create">&quot;Failed to insert new record into &quot;</string>
+    <string name="error.action.unknown">Unknown action, exiting</string>
+    
+</resources>

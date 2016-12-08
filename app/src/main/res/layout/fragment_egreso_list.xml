@@ -1,0 +1,204 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:ignore="missingPrefix">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:expandedTitleMarginBottom="80dp"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <TextView
+                android:id="@+id/tv_egreso_list_periodo"
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:layout_gravity="bottom|start"
+                android:minHeight="0dp"
+                android:layout_marginBottom="25dp"
+                android:ellipsize="end"
+                android:paddingStart="55dp"
+                android:paddingEnd="64dp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="?android:textColorSecondary"
+                app:layout_collapseMode="parallax"/>
+
+            <TextView
+                android:id="@+id/tv_egreso_list_total"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_gravity="start|bottom"
+                android:layout_marginBottom="5dp"
+                android:ellipsize="end"
+                android:paddingStart="55dp"
+                android:paddingEnd="64dp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="?android:textColorSecondary"
+                app:layout_collapseMode="parallax"/>
+
+            <TextView
+                android:id="@+id/tv_egreso_list_presupuesto"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_gravity="start|bottom"
+                android:layout_marginBottom="5dp"
+                android:ellipsize="end"
+                android:paddingStart="55dp"
+                android:paddingEnd="64dp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="?android:textColorSecondary"
+                app:layout_collapseMode="parallax"
+                android:text="Presupuesto: 4,500"/>
+
+            <TextView
+                android:id="@+id/tv_egreso_list_disponible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|bottom"
+                android:layout_marginBottom="5dp"
+                android:ellipsize="end"
+                android:paddingStart="55dp"
+                android:paddingEnd="64dp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="?android:textColorSecondary"
+                app:layout_collapseMode="parallax"
+                android:text="Disponible: 3,500"/>
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/scrollableview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="20dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_actions_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_actions_spacing"
+        android:clickable="true"
+        android:src="@drawable/ic_add"
+        app:layout_anchor="@+id/appbar"
+        app:layout_anchorGravity="bottom|right|end" />
+
+</android.support.design.widget.CoordinatorLayout>
+    <!--
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:ignore="missingPrefix">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/egreso_fl_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="5dp"
+                    android:orientation="horizontal"
+                    android:background="@color/ColorPrimaryDark">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|start"
+                        android:layout_marginEnd="3dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_weight="1"
+                        android:text="@string/egreso_list_total_label"
+                        android:textColor="@color/white"
+                        android:textAppearance="?android:attr/textAppearanceListItem" />
+
+                    <TextView
+                        android:id="@+id/tv_egreso_list_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|start"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="3dp"
+                        android:textColor="@color/white"
+                        android:textAppearance="?android:attr/textAppearanceListItem"
+                        android:text="125,000"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <android.rycsoft.ve.cashflow.uil.widgets.AddFloatingActionButton
+                android:id="@+id/floating_action_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="28dp"
+                android:layout_marginEnd="25dp"
+                android:visibility="invisible"
+                app:fabSize="normal"
+                app:fab_colorNormal="@color/pink"
+                app:fab_colorPressed="@color/pink_pressed"
+                app:fab_labelStyle="@style/menu_labels_style"
+                app:fab_plusIconColor="@color/white" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>
+-->

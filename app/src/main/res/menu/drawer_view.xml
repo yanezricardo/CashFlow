@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_movimiento_fragment"
+            android:icon="@drawable/ic_movimiento"
+            android:title="@string/nav_movimientos" />
+        <!--<item
+            android:id="@+id/nav_categoria_fragment"
+            android:icon="@drawable/ic_categoria"
+            android:title="@string/nav_categorias" />-->
+        <item
+            android:id="@+id/nav_instrumento_financiero_fragment"
+            android:icon="@drawable/ic_cuentas"
+            android:title="@string/nav_instrumento_financiero" />
+        <item
+            android:id="@+id/nav_presupuesto_fragment"
+            android:icon="@drawable/ic_presupuesto"
+            android:title="@string/nav_presupuesto" />
+        <item
+            android:id="@+id/nav_cxp_fragment"
+            android:icon="@drawable/ic_cxc"
+            android:title="@string/nav_cuentas_por_pagar" />
+        <item
+            android:id="@+id/nav_cxc_fragment"
+            android:icon="@drawable/ic_cxc"
+            android:title="@string/nav_cuentas_por_cobrar" />
+        <item
+            android:id="@+id/nav_personas_fragment"
+            android:icon="@drawable/ic_grupo"
+            android:title="@string/nav_personas" />
+    </group>
+    <group
+        android:id="@+id/nav_db_group"
+        android:checkableBehavior="none">
+        <item
+            android:icon="@drawable/ic_settings"
+            android:title="@string/nav_settings"/>
+    </group>
+</menu>

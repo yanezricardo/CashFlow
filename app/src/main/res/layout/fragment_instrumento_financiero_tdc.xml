@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="0dp"
+            android:paddingEnd="@dimen/activity_horizontal_margin"
+            android:stretchColumns="1">
+
+            <TableRow>
+
+                <ImageView
+                    android:id="@+id/iv_instrumentofinanciero_nombre_icon"
+                    style="@style/EditKindIconStyle"
+                    android:background="@drawable/ic_comment"
+                    android:contentDescription="@string/contentdescriptor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/LabelStyle"
+                        android:text="@string/instrumentofinanciero_nombre_label" />
+
+                    <EditText
+                        android:id="@+id/et_instrumentofinanciero_nombre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="text" />
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow>
+
+                <ImageView
+                    android:id="@+id/iv_instrumentofinanciero_limite_icon"
+                    style="@style/EditKindIconStyle"
+                    android:background="@drawable/ic_categoria"
+                    android:contentDescription="@string/contentdescriptor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/LabelStyle"
+                        android:text="@string/instrumentofinanciero_limite_label" />
+
+                    <EditText
+                        android:id="@+id/et_instrumentofinanciero_limite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="numberDecimal" />
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow>
+
+                <ImageView
+                    style="@style/EditKindIconStyle"
+                    android:background="@drawable/ic_today"
+                    android:contentDescription="@string/contentdescriptor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/LabelStyle"
+                        android:text="@string/instrumentofinanciero_dia_de_corte_label" />
+
+                    <Spinner
+                        android:id="@+id/sp_instrumentofinanciero_dia_de_corte"
+                        style="@style/SpinnerStyle"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/dias_del_mes" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow>
+
+                <ImageView
+                    style="@style/EditKindIconStyle"
+                    android:background="@drawable/ic_today"
+                    android:contentDescription="@string/contentdescriptor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/LabelStyle"
+                        android:text="@string/instrumentofinanciero_dia_de_pago_label" />
+
+                    <Spinner
+                        android:id="@+id/sp_instrumentofinanciero_dia_de_pago"
+                        style="@style/SpinnerStyle"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/dias_del_mes" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow>
+
+                <ImageView
+                    style="@style/EditKindIconStyle"
+                    android:background="@drawable/ic_recordatorio"
+                    android:contentDescription="@string/contentdescriptor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/LabelStyle"
+                        android:text="@string/instrumentofinanciero_recordar_dia_de_pago_label" />
+
+                    <Spinner
+                        android:id="@+id/sp_instrumentofinanciero_recordar_dia_de_pago"
+                        style="@style/SpinnerStyle"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/recordar_dias_antes_entries" />
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow android:visibility="invisible">
+
+                <ImageView
+                    android:id="@+id/iv_instrumentofinanciero_tipo_icon"
+                    style="@style/EditKindIconStyle"
+                    android:contentDescription="@string/contentdescriptor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/LabelStyle"
+                        android:text="@string/instrumentofinanciero_tipo_label" />
+
+                    <Spinner
+                        android:id="@+id/sp_instrumentofinanciero_tipo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/instrumentofinanciero_tipo_entries" />
+                </LinearLayout>
+
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>

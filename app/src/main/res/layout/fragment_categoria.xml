@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <TableRow>
+
+                <ImageView
+                    android:id="@+id/iv_categoria_icon"
+                    style="@style/EditKindIconStyle"
+                    android:background="@drawable/ic_categoria"
+                    android:contentDescription="@string/contentdescriptor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/LabelStyle"
+                        android:labelFor="@+id/et_categoria_nombre"
+                        android:text="@string/categoria_nombre_label" />
+
+                    <EditText
+                        android:id="@+id/et_categoria_nombre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="text" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow android:id="@+id/tr_categoria_tipo">
+
+                <ImageView
+                    style="@style/EditKindIconStyle"
+                    android:background="@drawable/ic_content_flag"
+                    android:contentDescription="@string/contentdescriptor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/LabelStyle"
+                        android:text="@string/categoria_tipo_label" />
+
+                    <Spinner
+                        android:id="@+id/sp_categoria_tipo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/categoria_tipo_entries" />
+                </LinearLayout>
+            </TableRow>
+
+        </TableLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
+

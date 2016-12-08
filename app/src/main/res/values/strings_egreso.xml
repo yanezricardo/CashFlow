@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="egreso_authorities">android.rycsoft.ve.cashflow.database.models.Egreso</string>
+	<string name="egreso_list_label">Egresos</string>
+	<string name="egreso_editor_title">Editar Egreso</string>
+
+	<string name="egreso_fecha_label">Fecha</string>
+	<string name="egreso_fecha_required_message">El campo Fecha es requerido</string>
+	<string name="egreso_monto_label">Monto</string>
+	<string name="egreso_monto_required_message">El campo Monto es requerido</string>
+	<string name="egreso_descripcion_label">Descripción</string>
+	<string name="egreso_descripcion_required_message">El campo Descripción es requerido</string>
+	<string name="egreso_instrumentofinanciero_label">Instrumento financiero</string>
+	<string name="egreso_list_total_label">Total</string>
+
+</resources>

@@ -1,0 +1,74 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="missingPrefix"
+    android:name="android.rycsoft.ve.cashflow.uil.activities.MainActivity"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- The ActionBar -->
+        <include
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!-- The main content view -->
+            <FrameLayout
+                android:id="@+id/flContent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <android.rycsoft.ve.cashflow.uil.widgets.AddFloatingActionButton
+                android:id="@+id/floating_action_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                app:fab_colorNormal="@color/pink"
+                app:fab_colorPressed="@color/pink_pressed"
+                app:fab_plusIconColor="@color/white"
+                app:fab_labelStyle="@style/menu_labels_style"
+                app:fabSize="normal"
+                android:visibility="invisible"/>
+
+            <android.rycsoft.ve.cashflow.uil.widgets.FloatingActionsMenu
+                android:id="@+id/fab_actions_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                app:fab_addButtonColorNormal="@color/pink"
+                app:fab_addButtonColorPressed="@color/pink_pressed"
+                app:fab_addButtonPlusIconColor="@color/white"
+                app:fab_labelStyle="@style/menu_labels_style"
+                android:visibility="invisible">
+
+            </android.rycsoft.ve.cashflow.uil.widgets.FloatingActionsMenu>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- The navigation drawer -->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nvView"
+        android:layout_width="305dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/white"
+        app:headerLayout="@layout/drawer_header"
+        app:menu="@menu/drawer_view" />
+</android.support.v4.widget.DrawerLayout>

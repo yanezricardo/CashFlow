@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="presupuestodetalle_authorities">android.rycsoft.ve.cashflow.database.models.PresupuestoDetalle</string>
+	<string name="presupuestodetalle_list_label">PresupuestoDetalle</string>
+	<string name="presupuestodetalle_editor_title">Editar PresupuestoDetalle</string>
+
+	<string name="presupuestodetalle_monto_label">Monto</string>
+	<string name="presupuestodetalle_monto_required_message">El campo Monto es requerido</string>
+
+
+
+
+</resources>

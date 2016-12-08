@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="cuentaporcobrar_authorities">android.rycsoft.ve.cashflow.database.models.CuentaPorCobrar</string>
+	<string name="cuentaporcobrar_list_label">Cuentas por cobrar</string>
+	<string name="cuentaporcobrar_editor_title">Cuenta por cobrar</string>
+
+	<string name="cuentaporcobrar_fecha_label">Fecha</string>
+	<string name="cuentaporcobrar_fecha_required_message">El campo Fecha es requerido</string>
+	<string name="cuentaporcobrar_monto_label">Monto</string>
+	<string name="cuentaporcobrar_monto_required_message">El campo Monto es requerido</string>
+	<string name="cuentaporcobrar_descripcion_label">Descripción</string>
+	<string name="cuentaporcobrar_descripcion_required_message">El campo Descripción es requerido</string>
+	<string name="cuentaporcobrar_deudor_label">Deudor</string>
+	<string name="cuentaporcobrar_deudor_required_message">El campo Deudor es requerido</string>
+	<string name="cuentaporcobrar_fecha_de_cobro_label">Fecha de cobro</string>
+	<string name="cuentaporcobrar_fecha_de_cobro_required_message">El campo Fecha de cobro es requerido</string>
+	<string name="cuentaporcobrar_recordar_fecha_de_cobro_label">Recordar fecha de cobro</string>
+	<string name="cuentaporcobrar_recordar_fecha_de_cobro_required_message">El campo Recordar fecha de cobro es requerido</string>
+
+
+
+
+</resources>

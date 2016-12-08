@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@drawable/ic_header_background"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/header_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/contentdescriptor"
+        android:src="@drawable/ic_one" />
+
+    <Spinner
+        android:id="@+id/header_person_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="5dp"
+        android:dropDownVerticalOffset="45dp"
+        android:dropDownWidth="305dp"
+        android:popupBackground="#FFFFFF"
+        android:spinnerMode="dropdown"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

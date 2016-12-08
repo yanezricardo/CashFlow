@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_categoria_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/contentdescriptor"
+        android:src="@drawable/ic_one" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_categoria_egreso_nombre"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|start"
+                android:layout_marginEnd="3dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:text="Transporte"
+                android:textAppearance="?android:attr/textAppearanceListItem"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_categoria_egreso_monto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|start"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="3dp"
+                android:text="0,00"
+                android:textAppearance="?android:attr/textAppearanceListItem" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_categoria_egreso_presupuesto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|start"
+                android:layout_marginEnd="3dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:text="Presupuesto: 2,500.00"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_categoria_egreso_diferencia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="3dp"
+                android:text="Diferencia: 2,000.00"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/pb_categoria_egreso_saldo_actual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|start"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="3dp"
+            android:indeterminate="false"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:progressTint="@color/ColorPrimary"
+            android:progress="80"/>
+    </LinearLayout>
+</LinearLayout>

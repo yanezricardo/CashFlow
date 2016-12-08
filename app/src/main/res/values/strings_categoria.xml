@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="categoria_authorities">android.rycsoft.ve.cashflow.database.models.Categoria</string>
+	<string name="categoria_list_label">Categorías</string>
+	<string name="categoria_editor_title">Categoría</string>
+
+	<string name="categoria_nombre_label">Nombre</string>
+	<string name="categoria_nombre_required_message">El campo Nombre es requerido</string>
+	<string name="categoria_tipo_label">Tipo</string>
+	<string name="categoria_tipo_required_message">El campo Tipo es requerido</string>
+	<string name="categoria_tipo_ingreso_label">Ingreso</string>
+	<string name="categoria_tipo_egreso_label">Egreso</string>
+
+	<string-array name="categoria_tipo_entries">
+		<item>Ingreso</item>
+		<item>Egreso</item>
+	</string-array>
+
+</resources>

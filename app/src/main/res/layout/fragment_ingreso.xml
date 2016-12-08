@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <TableRow>
+
+                <ImageView
+                    style="@style/EditKindIconStyle"
+                    android:background="@drawable/ic_today"
+                    android:contentDescription="@string/contentdescriptor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/LabelStyle"
+                        android:text="@string/ingreso_fecha_label" />
+
+                    <Button
+                        android:id="@+id/btn_ingreso_fecha"
+                        style="@style/SpinnerButtonStyle" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow>
+
+                <ImageView
+                    style="@style/EditKindIconStyle"
+                    android:background="@drawable/ic_money"
+                    android:contentDescription="@string/contentdescriptor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/LabelStyle"
+                        android:labelFor="@+id/et_ingreso_monto"
+                        android:text="@string/ingreso_monto_label" />
+
+                    <EditText
+                        android:id="@+id/et_ingreso_monto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="numberDecimal" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow>
+
+                <ImageView
+                    style="@style/EditKindIconStyle"
+                    android:background="@drawable/ic_instrumento"
+                    android:contentDescription="@string/contentdescriptor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/LabelStyle"
+                        android:labelFor="@+id/sp_ingreso_instrumentofinanciero"
+                        android:text="@string/ingreso_instrumentofinanciero_label" />
+
+                    <Spinner
+                        android:id="@+id/sp_ingreso_instrumentofinanciero"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:dropDownVerticalOffset="30dp"
+                        android:popupBackground="#FFFFFF"
+                        android:spinnerMode="dialog"
+                        style="@style/SpinnerStyle"/>
+
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow>
+
+                <ImageView
+                    style="@style/EditKindIconStyle"
+                    android:background="@drawable/ic_comment"
+                    android:contentDescription="@string/contentdescriptor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/LabelStyle"
+                        android:labelFor="@+id/et_ingreso_descripcion"
+                        android:text="@string/ingreso_descripcion_label" />
+
+                    <EditText
+                        android:id="@+id/et_ingreso_descripcion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textMultiLine" />
+                </LinearLayout>
+
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>

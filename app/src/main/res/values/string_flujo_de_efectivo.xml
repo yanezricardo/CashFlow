@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="flujo_de_efectivo_list_label">Flujo de Efectivo</string>
+    <string name="flujo_de_efectivo_ingresos">Ingresos</string>
+    <string name="flujo_de_efectivo_egresos">Egresos</string>
+    <string name="flujo_de_efectivo_graficos">Gráficos</string>
+
+    <string name="flujo_de_efectivo_balance_label">Balance</string>
+
+    <string name="flujo_de_efectivo_ingreso_total_monto_label">Total Ingresos</string>
+    <string name="flujo_de_efectivo_ingreso_total_estimado_label">Total Estimado</string>
+    <string name="flujo_de_efectivo_ingreso_total_diferencia_label">Total Diferencia</string>
+    <string name="flujo_de_efectivo_ingreso_monto_label">Ingreso</string>
+    <string name="flujo_de_efectivo_ingreso_estimado_label">Estimado</string>
+    <string name="flujo_de_efectivo_ingreso_diferencia_label">Diferencia</string>
+    <string name="flujo_de_efectivo_ingreso_diferencia_negativa_label">Déficit</string>
+
+    <string name="flujo_de_efectivo_egreso_total_monto_label">Total Egresos</string>
+    <string name="flujo_de_efectivo_egreso_total_presupuesto_label">Total Presupuesto</string>
+    <string name="flujo_de_efectivo_egreso_total_diferencia_label">Total Diferencia</string>
+    <string name="flujo_de_efectivo_egreso_monto_label">Egreso</string>
+    <string name="flujo_de_efectivo_egreso_presupuesto_label">Presupuesto</string>
+    <string name="flujo_de_efectivo_egreso_diferencia_label">Disponible</string>
+    <string name="flujo_de_efectivo_egreso_diferencia_negativa_label">Déficit</string>
+</resources>

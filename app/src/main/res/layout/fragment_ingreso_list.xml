@@ -1,0 +1,93 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:ignore="missingPrefix">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- The ActionBar-->
+        <include
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <!-- The main content view -->
+                <FrameLayout
+                android:id="@+id/ingreso_fl_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="5dp"
+                    android:orientation="horizontal"
+                    android:background="@color/ColorPrimaryDark">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|start"
+                        android:layout_marginEnd="3dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_weight="1"
+                        android:text="@string/egreso_list_total_label"
+                        android:textColor="@color/white"
+                        android:textAppearance="?android:attr/textAppearanceListItem" />
+
+                    <TextView
+                        android:id="@+id/tv_ingreso_list_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|start"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="3dp"
+                        android:textColor="@color/white"
+                        android:textAppearance="?android:attr/textAppearanceListItem"
+                        android:text="125,000"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <android.rycsoft.ve.cashflow.uil.widgets.AddFloatingActionButton
+                android:id="@+id/floating_action_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="28dp"
+                android:layout_marginEnd="25dp"
+                android:visibility="invisible"
+                app:fabSize="normal"
+                app:fab_colorNormal="@color/pink"
+                app:fab_colorPressed="@color/pink_pressed"
+                app:fab_labelStyle="@style/menu_labels_style"
+                app:fab_plusIconColor="@color/white" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

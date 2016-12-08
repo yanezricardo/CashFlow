@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="ingreso_authorities">android.rycsoft.ve.cashflow.database.models.Ingreso</string>
+	<string name="ingreso_list_label">Ingresos</string>
+	<string name="ingreso_editor_title">Editar Ingreso</string>
+
+	<string name="ingreso_fecha_label">Fecha</string>
+	<string name="ingreso_fecha_required_message">El campo Fecha es requerido</string>
+	<string name="ingreso_monto_label">Monto</string>
+	<string name="ingreso_monto_required_message">El campo Monto es requerido</string>
+	<string name="ingreso_descripcion_label">Descripción</string>
+	<string name="ingreso_descripcion_required_message">El campo Descripción es requerido</string>
+	<string name="ingreso_instrumentofinanciero_label">Instrumento financiero</string>
+
+</resources>

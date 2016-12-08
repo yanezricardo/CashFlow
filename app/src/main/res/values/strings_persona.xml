@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="persona_authorities">android.rycsoft.ve.cashflow.database.models.Persona</string>
+	<string name="persona_list_label">Personas</string>
+	<string name="persona_editor_title">Editar Persona</string>
+
+	<string name="persona_nombre_label">Nombre</string>
+	<string name="persona_nombre_required_message">El campo Nombre es requerido</string>
+	<string name="persona_email_label">Email</string>
+	<string name="persona_email_required_message">El campo Email es requerido</string>
+	<string name="persona_email_invalid_message">Email inválido</string>
+
+	<string name="persona_nuevo">Nueva cuenta de usuario</string>
+
+</resources>

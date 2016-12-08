@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <TableRow>
+
+                <ImageView
+                    style="@style/EditKindIconStyle"
+                    android:background="@drawable/ic_usuario"
+                    android:contentDescription="@string/contentdescriptor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/LabelStyle"
+                        android:labelFor="@+id/et_persona_nombre"
+                        android:text="@string/persona_nombre_label" />
+
+                    <EditText
+                        android:id="@+id/et_persona_nombre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="text|textCapSentences" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow>
+
+                <ImageView
+                    style="@style/EditKindIconStyle"
+                    android:background="@drawable/ic_email"
+                    android:contentDescription="@string/contentdescriptor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/LabelStyle"
+                        android:labelFor="@+id/et_persona_email"
+                        android:text="@string/persona_email_label" />
+
+                    <EditText
+                        android:id="@+id/et_persona_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textEmailAddress" />
+                </LinearLayout>
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>

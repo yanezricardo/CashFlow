@@ -1,0 +1,142 @@
+<resources>
+    <string name="app_name">CashFlow</string>
+    <string name="app_label">Flujo de Efectivo</string>
+    <string name="message.empty.list">No se encontraron registros</string>
+    <string name="list.search.label">Buscar…</string>
+    <string name="preferences_authorities">android.rycsoft.ve.cashflow.database.models.Preferences</string>
+
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="nav_movimientos">@string/flujo_de_efectivo_list_label</string>
+    <string name="nav_categorias">@string/categoria_list_label</string>
+    <string name="nav_cuentas_por_pagar">@string/cuentaporpagar_list_label</string>
+    <string name="nav_cuentas_por_cobrar">@string/cuentaporcobrar_list_label</string>
+    <string name="nav_instrumento_financiero">@string/instrumentofinanciero_list_label</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_dbbackup">Respaldar base de datos</string>
+    <string name="nav_dbrestore">Restaurar base de datos</string>
+    <string name="nav_personas">@string/persona_list_label</string>
+    <string name="nav_presupuesto">@string/presupuesto_list_label</string>
+
+
+    <string name="no_char_data_available_message">No hay información para graficar</string>
+    <string name="contentdescriptor">CashFlow</string>
+
+    <string name="title_activity_main">Flujo de Efectivo</string>
+
+    <string name="action_bar_add">Nuevo</string>
+    <string name="action_bar_delete">Eliminar</string>
+    <string name="action_bar_close_clear_cancel">Cancelar</string>
+    <string name="action_bar_save">Guardar</string>
+    <string name="action_bar_view">Vista</string>
+    <string name="action_bar_view_daily">Diario</string>
+    <string name="action_bar_view_fortnightly">Quincenal</string>
+    <string name="action_bar_view_monthly">Mensual</string>
+    <string name="action_bar_view_yearly">Anual</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_bar_date_filter">Periodo</string>
+
+    <string name="menu_insert">Nuevo</string>
+    <string name="menu_edit">Modificar</string>
+    <string name="menu_delete">Eliminar</string>
+    <string name="menu_save">Guardar</string>
+    <string name="menu_revert">Deshacer</string>
+    <string name="menu_discard">Descartar</string>
+
+    <string name="date_range_dialog_title">Rango de fechas</string>
+    <string name="date_range_dialog_accept_button_text">Aceptar</string>
+    <string name="date_range_dialog_cancel_button_text">Cancelar</string>
+    <string name="dias_del_mes_default_value">1</string>
+    <string name="recordar_dias_antes_default_value">5 días antes</string>
+
+    <string-array name="data_range_quick_pick">
+        <item>Selección rápida</item>
+        <item>Quincena actual</item>
+        <item>Quincena anterior</item>
+        <item>Mes actual</item>
+        <item>Mes anterior</item>
+        <item>Año actual</item>
+        <item>Año anterior</item>
+        <item>Hoy</item>
+    </string-array>
+
+    <string-array name="recordar_dias_antes_entries">
+        <item>No recordar</item>
+        <item>5 días antes</item>
+        <item>10 días antes</item>
+        <item>15 días antes</item>
+        <item>20 días antes</item>
+        <item>25 días antes</item>
+        <item>30 días antes</item>
+    </string-array>
+
+    <string-array name="dias_del_mes">
+        <item>Ninguno</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+
+    <string name="default_values_cuenta_bancaria_nombre">Cuenta bancaria</string>
+    <string name="default_values_cuenta_bancaria_tipo">Cuenta</string>
+    <string name="default_values_tdc_nombre">Tarjeta de Crédito</string>
+    <string name="default_values_tdc_tipo">TDC</string>
+    <string name="default_values_egreso_nombre">Egreso</string>
+    <string name="default_values_ingreso_nombre">Ingreso</string>
+
+    <string name="default_values_install_dialog_message">Desea que la aplicación configure algunos valores iniciales?</string>
+    <string name="default_values_install_dialog_title">Valores Iniciales</string>
+
+    <string-array name="default_value_categorias_ingreso">
+        <item>Sueldo</item>
+        <item>Bonos</item>
+        <item>Otros</item>
+    </string-array>
+
+    <string-array name="default_value_categorias_egreso">
+        <item>Transporte</item>
+        <item>Mercado</item>
+        <item>Comidas en la calle</item>
+        <item>Educación</item>
+        <item>Condominio</item>
+        <item>Servicios públicos</item>
+        <item>Telecomunicaciones</item>
+        <item>Salud</item>
+        <item>Hipoteca</item>
+        <item>Pagos a TDC</item>
+        <item>Seguros</item>
+        <item>Inversiones y ahorros</item>
+        <item>Remesas y donaciones</item>
+        <item>Deducciones de nómina</item>
+        <item>ISLR</item>
+        <item>Otros</item>
+    </string-array>
+</resources>

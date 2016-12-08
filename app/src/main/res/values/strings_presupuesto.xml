@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="presupuesto_authorities">android.rycsoft.ve.cashflow.database.models.Presupuesto</string>
+	<string name="presupuesto_list_label">Presupuestos</string>
+	<string name="presupuesto_editor_title">Presupuesto</string>
+
+	<string name="presupuesto_fecha_desde_label">Desde</string>
+	<string name="presupuesto_fecha_desde_required_message">El campo Desde es requerido</string>
+	<string name="presupuesto_fecha_hasta_label">Hasta</string>
+	<string name="presupuesto_fecha_hasta_required_message">El campo Hasta es requerido</string>
+
+	<string name="presupuesto_total_egresos">Total Egresos</string>
+	<string name="presupuesto_total_ingresos">Total Ingresos</string>
+
+
+</resources>

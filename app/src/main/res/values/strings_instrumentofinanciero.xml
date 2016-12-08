@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="instrumentofinanciero_authorities">android.rycsoft.ve.cashflow.database.models.InstrumentoFinanciero</string>
+    <string name="instrumentofinanciero_list_label">Instrumentos Financieros</string>
+    <string name="instrumentofinanciero_editor_title">Instrumento</string>
+
+    <string name="instrumentofinanciero_nombre_label">Nombre</string>
+    <string name="instrumentofinanciero_nombre_required_message">El campo Nombre es requerido</string>
+    <string name="instrumentofinanciero_limite_label">Límite</string>
+    <string name="instrumentofinanciero_limite_required_message">El campo Límite es requerido</string>
+    <string name="instrumentofinanciero_tipo_label">Tipo</string>
+    <string name="instrumentofinanciero_tipo_required_message">El campo Tipo es requerido</string>
+    <string name="instrumentofinanciero_tdc">Tarjeta de crédito</string>
+    <string name="instrumentofinanciero_cuenta">Cuenta bancaria</string>
+
+    <string name="instrumentofinanciero_dia_de_corte_label">Día de corte</string>
+    <string name="instrumentofinanciero_dia_de_pago_label">Día de pago</string>
+    <string name="instrumentofinanciero_recordar_dia_de_pago_label">Recordar día de pago</string>
+    <string name="instrumentofinanciero_tipo_default_value">Cuenta</string>
+
+    <string-array name="instrumentofinanciero_tipo_entries">
+        <item>Cuenta</item>
+        <item>TDC</item>
+    </string-array>
+
+
+</resources>

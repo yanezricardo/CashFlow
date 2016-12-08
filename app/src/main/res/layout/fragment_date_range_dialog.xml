@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/sp_data_range_quick_pick"
+            style="@style/SpinnerStyle"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="10dp"
+            android:dropDownVerticalOffset="30dp"
+            android:entries="@array/data_range_quick_pick"
+            android:gravity="center_horizontal"
+            android:popupBackground="#FFFFFF"
+            android:spinnerMode="dropdown" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Desde" />
+
+            <DatePicker
+                android:id="@+id/dp_date_from"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                android:layoutMode="clipBounds" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Hasta" />
+
+            <DatePicker
+                android:id="@+id/dp_date_to"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                android:layoutMode="clipBounds" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

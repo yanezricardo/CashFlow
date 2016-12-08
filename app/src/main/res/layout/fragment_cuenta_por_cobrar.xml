@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <TableRow>
+
+                <ImageView
+                    style="@style/EditKindIconStyle"
+                    android:background="@drawable/ic_today"
+                    android:contentDescription="@string/contentdescriptor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/LabelStyle"
+                        android:text="@string/cuentaporcobrar_fecha_label" />
+
+                    <Button
+                        android:id="@+id/btn_cuenta_por_cobrar_fecha"
+                        style="@style/SpinnerButtonStyle" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow>
+
+                <ImageView
+                    style="@style/EditKindIconStyle"
+                    android:background="@drawable/ic_today"
+                    android:contentDescription="@string/contentdescriptor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/LabelStyle"
+                        android:text="@string/cuentaporcobrar_fecha_de_cobro_label" />
+
+                    <Button
+                        android:id="@+id/btn_cuenta_por_cobrar_fecha_de_cobro"
+                        style="@style/SpinnerButtonStyle" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow>
+
+                <ImageView
+                    style="@style/EditKindIconStyle"
+                    android:background="@drawable/ic_money"
+                    android:contentDescription="@string/contentdescriptor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/LabelStyle"
+                        android:labelFor="@+id/et_cuenta_por_cobrar_monto"
+                        android:text="@string/cuentaporcobrar_monto_label" />
+
+                    <EditText
+                        android:id="@+id/et_cuenta_por_cobrar_monto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="numberDecimal" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow>
+
+                <ImageView
+                    style="@style/EditKindIconStyle"
+                    android:background="@drawable/ic_usuario"
+                    android:contentDescription="@string/contentdescriptor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/LabelStyle"
+                        android:labelFor="@+id/et_cuenta_por_cobrar_deudor"
+                        android:text="@string/cuentaporcobrar_deudor_label" />
+
+                    <EditText
+                        android:id="@+id/et_cuenta_por_cobrar_deudor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="text" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow>
+
+                <ImageView
+                    style="@style/EditKindIconStyle"
+                    android:background="@drawable/ic_comment"
+                    android:contentDescription="@string/contentdescriptor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/LabelStyle"
+                        android:labelFor="@+id/et_cuenta_por_cobrar_descripcion"
+                        android:text="@string/cuentaporcobrar_descripcion_label" />
+
+                    <EditText
+                        android:id="@+id/et_cuenta_por_cobrar_descripcion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="text" />
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow>
+
+                <ImageView
+                    style="@style/EditKindIconStyle"
+                    android:background="@drawable/ic_recordatorio"
+                    android:contentDescription="@string/contentdescriptor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/LabelStyle"
+                        android:text="@string/cuentaporcobrar_recordar_fecha_de_cobro_label" />
+
+                    <Spinner
+                        android:id="@+id/sp_cuentaporcobrar_recordar_fecha_de_cobro"
+                        style="@style/SpinnerStyle"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/recordar_dias_antes_entries" />
+                </LinearLayout>
+
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>

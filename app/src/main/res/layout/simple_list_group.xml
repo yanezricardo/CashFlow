@@ -1,0 +1,11 @@
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/simple_list_group_text"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:gravity="center_vertical|start"
+    android:paddingEnd="3dp"
+    android:paddingStart="32dp"
+    android:textAppearance="?android:attr/textAppearanceListItem"
+    android:textStyle="bold"
+    android:background="@color/background"
+    android:text="Prueba"/>

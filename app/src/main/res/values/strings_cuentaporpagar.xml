@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="cuentaporpagar_authorities">android.rycsoft.ve.cashflow.database.models.CuentaPorPagar</string>
+	<string name="cuentaporpagar_list_label">Cuentas por pagar</string>
+	<string name="cuentaporpagar_editor_title">Cuenta por pagar</string>
+
+	<string name="cuentaporpagar_fecha_label">Fecha</string>
+	<string name="cuentaporpagar_fecha_required_message">El campo Fecha es requerido</string>
+	<string name="cuentaporpagar_monto_label">Monto</string>
+	<string name="cuentaporpagar_monto_required_message">El campo Monto es requerido</string>
+	<string name="cuentaporpagar_descripcion_label">Descripción</string>
+	<string name="cuentaporpagar_descripcion_required_message">El campo Descripción es requerido</string>
+	<string name="cuentaporpagar_acreedor_label">Acreedor</string>
+	<string name="cuentaporpagar_acreedor_required_message">El campo Acreedor es requerido</string>
+	<string name="cuentaporpagar_fecha_de_pago_label">Fecha de pago</string>
+	<string name="cuentaporpagar_fecha_de_pago_required_message">El campo Fecha de pago es requerido</string>
+	<string name="cuentaporpagar_recordar_fecha_de_pago_label">Recordar fecha de pago</string>
+	<string name="cuentaporpagar_recordar_fecha_de_pago_required_message">El campo Recordar fecha de pago es requerido</string>
+
+
+
+
+</resources>
